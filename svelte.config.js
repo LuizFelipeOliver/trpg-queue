@@ -17,10 +17,10 @@ const config = {
 			fallback: 'index.html'
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/trpg-queue' : ''
+			base: '/trpg-queue'
 		},
 		prerender: {
-		entries: []
+		entries: ['*']
 		}
 	}
 };
