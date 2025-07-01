@@ -19,7 +19,7 @@ const config = {
 			fallback: 'index.html'
 		}),
 		paths: {
-			base: '/trpg-queue'
+			base: isVercel ? '' : '/trpg-queue'
 		},
 		prerender: {
 		entries: ['*']
